@@ -2,6 +2,19 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-friends',
+  styles: [`
+    div {
+      background-color: #efefef;
+      margin-bottom: 15px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      box-shadow:2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+    }
+    h2 {
+      text-align: center;
+    }
+  `],
   template: `
       <h1>Hello from the {{ componentName }}!</h1>
       <div *ngFor="#f of friends">
