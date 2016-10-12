@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { bootstrap } from '@angular/platform-browser-dynamic';
 
+import { FriendComponent } from './friend.component';
 
 @Component({
   // moduleId: module.id,
@@ -8,6 +9,7 @@ import { bootstrap } from '@angular/platform-browser-dynamic';
   // templateUrl: 'angular2-components.component.html',
   // styleUrls: ['angular2-components.component.css']
   selector: 'my-app',
+  directives: [FriendComponent],
   styles: [`
     h1 {
         color: #545454;
@@ -19,6 +21,7 @@ import { bootstrap } from '@angular/platform-browser-dynamic';
   template: `
   <div>
     <h1>Hello from the {{ componentName }}.</h1>
+    <my-friends></my-friends>
    </div>
   `
 })
