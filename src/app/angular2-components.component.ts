@@ -17,7 +17,9 @@ import { bootstrap } from '@angular/platform-browser-dynamic';
     }
   `],
   template: `
+  <div>
     <h1>Hello from the {{ componentName }}.</h1>
+   </div>
   `
 })
 export class Angular2ComponentsAppComponent {
