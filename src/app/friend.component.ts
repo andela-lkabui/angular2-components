@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 
+import { FriendService } from './friend.service';
+
 @Component({
   selector: 'my-friends',
+  providers: [ FriendService ],
   styles: [`
     div {
       background-color: #efefef;
